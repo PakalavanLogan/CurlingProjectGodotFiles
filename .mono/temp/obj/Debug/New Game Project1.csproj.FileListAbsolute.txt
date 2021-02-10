@@ -1,0 +1,8 @@
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\bin\Debug\New Game Project1.dll
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\bin\Debug\New Game Project1.pdb
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\obj\Debug\New Game Project1.csprojAssemblyReference.cache
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\obj\Debug\New Game Project1.AssemblyInfoInputs.cache
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\obj\Debug\New Game Project1.AssemblyInfo.cs
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\obj\Debug\New Game Project1.csproj.CoreCompileInputs.cache
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\obj\Debug\New Game Project1.dll
+C:\Users\lpaka\OneDrive\Documents\New Game Project1\.mono\temp\obj\Debug\New Game Project1.pdb

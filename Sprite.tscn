@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://5_1412195922_661c09a033dfba32025e395ddcbcb393.jpg" type="Texture" id=1]
+
+[node name="Sprite" type="Sprite"]
+
+[node name="5_1412195922_661c09a033dfba32025e395ddcbcb393" type="Sprite" parent="."]
+position = Vector2( 315.6, 364.879 )
+rotation = 3.14159
+texture = ExtResource( 1 )
