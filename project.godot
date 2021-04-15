@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="New Game Project1"
-run/main_scene="res://Node2D.tscn"
+run/main_scene="res://control.tscn"
 config/icon="res://icon.png"
 
 [autoload]

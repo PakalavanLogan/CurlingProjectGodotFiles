@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://RigidBody2D.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Node2D.cs" type="Script" id=2]
@@ -8,15 +8,45 @@
 [ext_resource path="res://Label3.cs" type="Script" id=6]
 [ext_resource path="res://sprite2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Sprite.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Runbikmn.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Button11.cs" type="Script" id=10]
+[ext_resource path="res://RigidBody22D.tscn" type="PackedScene" id=11]
+[ext_resource path="res://RigidBody22D.cs" type="Script" id=12]
+[ext_resource path="res://istockphoto-1132033805-170667a.jpg" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 18
+font_data = ExtResource( 9 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="RigidBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 353.29, 524.32 )
+position = Vector2( 219.201, 517.682 )
+
+[node name="RigidBody2D6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 985.857, 521.131 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 349.184, 297.2 )
+position = Vector2( 216.042, 290.463 )
+scale = Vector2( 0.895487, 0.962803 )
+z_index = -10
+texture = ExtResource( 3 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 982.737, 293.241 )
 scale = Vector2( 0.895487, 0.962803 )
 z_index = -10
 texture = ExtResource( 3 )
@@ -25,10 +55,12 @@ texture = ExtResource( 3 )
 layer = 0
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-margin_left = 605.931
-margin_top = 91.4839
-margin_right = 819.931
-margin_bottom = 141.484
+margin_left = 461.133
+margin_top = 112.811
+margin_right = 675.133
+margin_bottom = 162.811
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Distance"
 script = ExtResource( 4 )
 __meta__ = {
@@ -36,10 +68,12 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
-margin_left = 604.955
-margin_top = 59.4273
-margin_right = 694.955
-margin_bottom = 73.4273
+margin_left = 460.157
+margin_top = 87.4889
+margin_right = 551.157
+margin_bottom = 106.489
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "LinearVelocity"
 script = ExtResource( 5 )
 __meta__ = {
@@ -47,18 +81,74 @@ __meta__ = {
 }
 
 [node name="Label3" type="Label" parent="CanvasLayer"]
-margin_left = 603.764
-margin_top = 24.6226
-margin_right = 702.764
-margin_bottom = 38.6226
+margin_left = 460.089
+margin_top = 58.2965
+margin_right = 561.089
+margin_bottom = 77.2965
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "AngularVelocity"
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label4" type="Label" parent="CanvasLayer"]
+margin_left = 457.148
+margin_top = 233.36
+margin_right = 794.148
+margin_bottom = 331.36
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Rules: To spawn a curling press the left mouse button.
+To add an inital impulse to the curling stone press the 
+right mouse button."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="sprite2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 102.539, -78.1087 )
+position = Vector2( 2.6456, -78.1087 )
+
+[node name="sprite4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1210.66, 680.669 )
+rotation = 3.14159
+
+[node name="sprite3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 760.235, -75.3137 )
 
 [node name="Sprite2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 209.134, -62.4998 )
+position = Vector2( 52.6407, -65.7203 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 541.995
+margin_top = 179.489
+margin_right = 610.995
+margin_bottom = 199.489
+text = "Back"
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RigidBody2D2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 988.805, 395.369 )
+script = ExtResource( 12 )
+
+[node name="RigidBody2D3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 967.799, 380.952 )
+script = ExtResource( 12 )
+
+[node name="RigidBody2D4" parent="." instance=ExtResource( 11 )]
+position = Vector2( 952.909, 430.041 )
+script = ExtResource( 12 )
+
+[node name="RigidBody2D5" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1018.85, 432.815 )
+script = ExtResource( 12 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 974.68, 541.559 )
+scale = Vector2( 4.84614, 3.19745 )
+z_index = -1000
+texture = ExtResource( 13 )

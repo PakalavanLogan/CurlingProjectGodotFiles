@@ -1,0 +1,199 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Button.cs" type="Script" id=1]
+[ext_resource path="res://control.cs" type="Script" id=2]
+[ext_resource path="res://Untitled-1 - Copy.png" type="Texture" id=3]
+[ext_resource path="res://Extrude.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Runbikmn.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://abstract-violet-pixel-rain-background_23-2148362568.jpg" type="Texture" id=6]
+[ext_resource path="res://Button2.cs" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 18
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 18
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 18
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 18
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 18
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+margin_left = 90.51
+margin_top = 2.0
+margin_right = 1743.51
+margin_bottom = 848.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 470.97
+margin_top = 51.2395
+margin_right = 981.972
+margin_bottom = 156.24
+custom_fonts/font = SubResource( 1 )
+text = "Curling Stone Game
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 706.97
+margin_top = 156.46
+margin_right = 754.97
+margin_bottom = 176.46
+text = "Start"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+TorquePath = NodePath("../SpinBox")
+ImpulsePath = NodePath("../SpinBox2")
+FrictionPath = NodePath("../SpinBox3")
+Torque2Path = NodePath("../SpinBox4")
+
+[node name="Untitled-1 - Copy" type="Sprite" parent="."]
+position = Vector2( 89.8956, 216.228 )
+texture = ExtResource( 3 )
+
+[node name="Untitled-1 - Copy2" type="Sprite" parent="."]
+position = Vector2( 88.1532, 591.202 )
+texture = ExtResource( 3 )
+
+[node name="Untitled-1 - Copy3" type="Sprite" parent="."]
+position = Vector2( 1215.38, 216.497 )
+texture = ExtResource( 3 )
+
+[node name="Untitled-1 - Copy4" type="Sprite" parent="."]
+position = Vector2( 1228.05, 606.783 )
+texture = ExtResource( 3 )
+
+[node name="Untitled-1 - Copy5" type="Sprite" parent="."]
+position = Vector2( 711.339, 612.014 )
+texture = ExtResource( 3 )
+
+[node name="SpinBox" type="SpinBox" parent="."]
+margin_left = 449.474
+margin_top = 240.408
+margin_right = 535.474
+margin_bottom = 267.408
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 411.382
+margin_top = 202.927
+margin_right = 589.382
+margin_bottom = 231.927
+custom_fonts/font = SubResource( 2 )
+text = "Set Toruqe value"
+
+[node name="SpinBox2" type="SpinBox" parent="."]
+margin_left = 693.971
+margin_top = 243.946
+margin_right = 767.971
+margin_bottom = 267.946
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 647.317
+margin_top = 202.657
+margin_right = 811.317
+margin_bottom = 221.657
+custom_fonts/font = SubResource( 3 )
+text = "Set impulse value"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox3" type="SpinBox" parent="."]
+anchor_right = 0.021
+margin_left = 915.331
+margin_top = 242.827
+margin_right = 958.776
+margin_bottom = 266.827
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 867.051
+margin_top = 205.113
+margin_right = 1037.05
+margin_bottom = 234.113
+custom_fonts/font = SubResource( 4 )
+text = "Set Friction value"
+
+[node name="Label5" type="Label" parent="."]
+anchor_right = 0.014
+anchor_bottom = 0.008
+margin_left = 234.382
+margin_top = 371.829
+margin_right = 411.012
+margin_bottom = 509.149
+custom_fonts/font = SubResource( 5 )
+text = "Unit Conversion: 
+1Godot Mass=1000kg
+1 Pixel= 0.1m
+1 pixel/s = 0.1m/s
+1 Godot Force Unite = 100N
+1 Godot Impulse = 100Kg*m/s
+"
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 319.958
+margin_top = 244.736
+margin_right = 422.958
+margin_bottom = 264.736
+custom_fonts/font = SubResource( 6 )
+text = "Clockwise"
+
+[node name="SpinBox4" type="SpinBox" parent="."]
+margin_left = 451.331
+margin_top = 296.65
+margin_right = 525.331
+margin_bottom = 320.65
+
+[node name="Label7" type="Label" parent="."]
+margin_left = 329.493
+margin_top = 289.233
+margin_right = 425.493
+margin_bottom = 330.233
+custom_fonts/font = SubResource( 7 )
+text = "Counter
+ClockWise"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 869.819, 545.624 )
+scale = Vector2( 3.06815, 2.61079 )
+z_index = -100
+texture = ExtResource( 6 )
+
+[node name="Button2" type="Button" parent="."]
+anchor_right = 0.033
+anchor_bottom = 0.024
+margin_left = 281.299
+margin_top = 520.493
+margin_right = 308.75
+margin_bottom = 524.189
+text = "Theory"
+script = ExtResource( 7 )
